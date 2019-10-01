@@ -1,0 +1,32 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'scheduling' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'SSCalendarControl'
+  pod 'Firebase/Database'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+  pod 'SwiftyJSON','~>4.2.0'
+  pod 'iOSDropDown'
+  pod 'SwiftPopup', '~> 5.0.0'
+
+  # Pods for scheduling
+
+  target 'schedulingTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'SSCalendarControl'
+  end
+
+  target 'schedulingUITests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'SSCalendarControl'
+  end
+
+end
